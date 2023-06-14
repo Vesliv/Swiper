@@ -56,6 +56,11 @@ button {
 .companies-item-tb{
   text-align: center;
 }
+
+.companies{
+  display: none;
+}
+
 @media (min-width: 320px) {
   .wrapper {
   }
@@ -99,9 +104,6 @@ button {
     --swiper-pagination-bullet-size: 12px;
   }
 
-  .companies {
-    display: none;
-  }
   .show {
     display: none;
   }
@@ -117,7 +119,6 @@ button {
     
   }
   .header__title{
-    padding: 20px;
 
   }
   .companies {
@@ -135,11 +136,17 @@ button {
   }
   .companies-item img {
   }
+  .companies-item-tb{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
   .companies-item-dt {
     display: none;
   }
-  button {
-    margin-left: 28px;
+  .arrow img {
+    width: 40px;
+    height: 40px;
   }
 
   .swiper {
@@ -155,7 +162,7 @@ button {
     font-family: "TT Lakes Medium";
     font-size: 16px;
     gap: 16px;
-    margin-left: 60px;
+    margin-left: 30px;
   }
 }
 @media (min-width: 1120px) {
@@ -166,9 +173,9 @@ button {
     max-width: 1120px;
   }
   .header__title{
-    margin-left: 10px;
   }
   .companies-item-tb {
+    display: flex;
   }
   .companies-item {
     display: grid;
@@ -176,7 +183,14 @@ button {
     row-gap: 16px;
   }
   .companies-item-dt {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    
+  }
+  .arrow img {
+    width: 40px;
+    height: 40px;
   }
   
   .swiper {
@@ -193,6 +207,8 @@ button {
     display: none;
   }
   .companies-item-dt.is-visible{
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 50px;
   }
 }
